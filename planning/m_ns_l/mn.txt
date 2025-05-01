@@ -1,1 +1,5 @@
-
+1) Software and and tools to be use for making user interactive
+  Backend: Python using Django
+  Database: MySQL
+  Frontend: HTML/CSS/JavaScript
+  Integration: Django for serving HTML pages and handling user inputs.
