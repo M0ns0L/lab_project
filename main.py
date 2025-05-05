@@ -1,7 +1,8 @@
 import mqsql.connector 
 import pandas as pd
 from flash import Flask, render_template, request, redirect
-
+app = Flask(__name__)
+@app.route("/")
 connection = mysql.connector.connect(
     host="localhost",
     user="your_username",  # MySQL username
@@ -9,5 +10,6 @@ connection = mysql.connector.connect(
     database="school_db"
 )
 
-def home():
-    return render_template('index.html')
+def home_page():
+    return render_template("index.html")
+app.run(debug=True)
