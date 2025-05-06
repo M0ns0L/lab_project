@@ -20,11 +20,11 @@ def home_page():
 
 @app.route("/start_practical/")
 def start_prac():
-    return render_templates("start_prac.html")
+    return render_template("start_prac.html")
 
 @app.route("/student_record/")
 def student_record():
-    return render_templates("student_record.html")
+    return render_template("student_record.html")
 
 
 app.run(debug=True, port = 80)
