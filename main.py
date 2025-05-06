@@ -1,7 +1,11 @@
 import mqsql.connector 
 import pandas as pd
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, SQLAlchemy, request, redirect
+
+
 app = Flask(__name__)
+app.config[SQLALCHEMY_DATABASE_URI] = mysql://username:password@server/db
+db = SQLAlchemy(app)
 
 connection = mysql.connector.connect(
     host="localhost",
