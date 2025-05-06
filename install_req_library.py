@@ -5,6 +5,7 @@
 commands = [
     'pip install pandas',
     'pip install flask flask-sqlalchemy flask-wtf flask-bcrypt flask-login flask-admin'
+    'pip install flask mysql-connector-python'
 ]
 import subprocess
 def run_commands(commands):
