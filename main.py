@@ -15,7 +15,10 @@ connection = mysql.connector.connect(
     database="school_db"
 )
 
-@app.route("/home/")
+@app.route("/student_database/")
+def database_table():
+
+@app.route("/")
 def home_page():
     return render_template("index.html")
 
@@ -27,5 +30,7 @@ def start_prac():
 def student_record():
     return render_template("student_record.html")
 
+if __name__ == "__main__":
+    app.run(debug=True, port = 80)
+    
 
-app.run(debug=True, port = 80)
